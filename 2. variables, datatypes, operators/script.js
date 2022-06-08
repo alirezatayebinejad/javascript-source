@@ -56,4 +56,10 @@ let remain = a % b; //1
 let exponentiation = a ** b; //32
 a++; //a=3
 b--; //b=4
+a=a+5; //or a+=5; or any operator instead of +
+let c=2;
+let d;
+d=c++;//d=2
+c=2;
+d=++c;//d=3
 
