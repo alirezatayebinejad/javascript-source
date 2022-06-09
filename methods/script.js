@@ -1,53 +1,68 @@
 //print
-console.log("any variable or value here");//prints to the console in browser inspedt tool
+console.log("any variable or value here"); //prints to the console in browser inspedt tool
 
-let name="methods";
-alert("file name: "+ name +"\n"+"this file contains all \"methods\" we need");
+let name = "methods";
+alert("file name: " + name + "\n" + 'this file contains all "methods" we need');
 
 isNaN("value"); //if value is number: output=true else output=false
 
 prompt("enter your name: "); // get a value from user
 
-
 //string methods
-let text = 'alireza is the best';
-let firstIndex = text[0];//0=a 1=l 2=i ... 18=t
-let stringLength= text.length;//19
+let text = "alireza is the best";
+let firstIndex = text[0]; //0=a 1=l 2=i ... 18=t
+let stringLength = text.length; //19
 
-text.charAt(2);//i
-text.charCodeAt(2);//i=72 asci code
-text.concat(" so true");//alireza is the best so true
-text.trim();//delete all spaces before and after string not between
-text.toLowerCase();//lowercase all string charachters
-text.toUpperCase();//upercase all string charachters
-text.search("is");//return the index of start char of 'is' in string
-text.indexOf("is");//like search
-text.includes("is");//true if 'is' exist in string otherwise false
-text.slice(8,13);//'is the' number of index, to this index
-text.substr(8,6);//'is the' number of index, this number after the first number
-text.substring(8,13);//'is the' number of index, to this index like slice
+text.charAt(2); //i
+text.charCodeAt(2); //i=72 asci code
+text.concat(" so true"); //alireza is the best so true
+text.trim(); //delete all spaces before and after string not between
+text.toLowerCase(); //lowercase all string charachters
+text.toUpperCase(); //upercase all string charachters
+text.search("is"); //return the index of start char of 'is' in string
+text.indexOf("is"); //like search
+text.includes("is"); //true if 'is' exist in string otherwise false
+text.slice(8, 13); //'is the' number of index, to this index
+text.substr(8, 6); //'is the' number of index, this number after the first number
+text.substring(8, 13); //'is the' number of index, to this index like slice
 
 //math methods
-Math.PI();//p=3.14...
-2**3;//8 power
-Math.pow(2,3);//8
-Math.sqrt(16);//4
-Math.abs(-10);//10 delets negetive |-12|=12
-Math.min(20,90,56,5,56);// 5 minimum
-Math.max(20,90,56,5,56);// 96 maximum
-Math.floor(14.6);// 14
-Math.trunc(14.6);// 14 like floor
-Math.round(12.8);// 13 round the number 12.4=12
-Math.ceil(12.8);// 13 allways round to the top 12.4=13
-Math.random();// a random number between 0 to 1
-Math.random()*10;// a random number between 0 to 10
+Math.PI(); //p=3.14...
+2 ** 3; //8 power
+Math.pow(2, 3); //8
+Math.sqrt(16); //4
+Math.abs(-10); //10 delets negetive |-12|=12
+Math.min(20, 90, 56, 5, 56); // 5 minimum
+Math.max(20, 90, 56, 5, 56); // 96 maximum
+Math.floor(14.6); // 14
+Math.trunc(14.6); // 14 like floor
+Math.round(12.8); // 13 round the number 12.4=12
+Math.ceil(12.8); // 13 allways round to the top 12.4=13
+Math.random(); // a random number between 0 to 1
+Math.random() * 10; // a random number between 0 to 10
 
 //arrays methods
-let scores=[15,14,5,12,4,20];
-scores[6]=16;//adds the next array value now scores=[15,14,5,12,4,20,16];
-scores.push(13,17,1);//push values into array scores=[15,14,5,12,4,20,16,13,17,1];
-scores.pop();//pop out the last value from array scores=[15,14,5,12,4,20,16,13,17];
-scores.shift();//delets first element of array scores=[14,5,12,4,20,16,13,17];
-scores.unshift(8,7);//add to first of array scores=[8,7,14,5,12,4,20,16,13,17];
+let scores = [15, 14, 5, 12, 4, 20];
+let students = [
+  { name: "ali", last: "ahmadi", age: 22 },
+  { name: "reza", last: "alavi", age: 25 },
+  { name: "sara", last: "mohseni", age: 20 }
+];
 
-
+scores[6] = 16; //adds the next array value now scores=[15,14,5,12,4,20,16];
+scores.push(13, 17, 1); //push values into array scores=[15,14,5,12,4,20,16,13,17,1];
+scores.pop(); //pop out the last value from array scores=[15,14,5,12,4,20,16,13,17];
+scores.shift(); //delets first element of array scores=[14,5,12,4,20,16,13,17];
+scores.unshift(8, 7); //add to first of array scores=[8,7,14,5,12,4,20,16,13,17];
+scores.includes(4); //true if it finds & false if it doesnt find - we can use a second input as sart index
+students.forEach(function (number) {
+  console.log(number.age);
+}); //function will execute 2 times (array length) and every time one array value goes into function input as number variable + for objects & arrays
+var isInUsers = students.some(function (user) {
+  console.log(user);
+  return user.name == "reza";
+});//like forEach but it returns true or false and function codes will execute for every array elements untill it reaches a true then stops
+var isAll = ages.every(function (age) {
+	console.log(age);
+	return age > 18;
+}); //like some but it will stop executing when it reaches a false and return true or false
