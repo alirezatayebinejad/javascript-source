@@ -35,7 +35,6 @@ Math.sqrt(16);//4
 Math.abs(-10);//10 delets negetive |-12|=12
 Math.min(20,90,56,5,56);// 5 minimum
 Math.max(20,90,56,5,56);// 96 maximum
-
 Math.floor(14.6);// 14
 Math.trunc(14.6);// 14 like floor
 Math.round(12.8);// 13 round the number 12.4=12
@@ -43,8 +42,12 @@ Math.ceil(12.8);// 13 allways round to the top 12.4=13
 Math.random();// a random number between 0 to 1
 Math.random()*10;// a random number between 0 to 10
 
-
-
-
+//arrays methods
+let scores=[15,14,5,12,4,20];
+scores[6]=16;//adds the next array value now scores=[15,14,5,12,4,20,16];
+scores.push(13,17,1);//push values into array scores=[15,14,5,12,4,20,16,13,17,1];
+scores.pop();//pop out the last value from array scores=[15,14,5,12,4,20,16,13,17];
+scores.shift();//delets first element of array scores=[14,5,12,4,20,16,13,17];
+scores.unshift(8,7);//add to first of array scores=[8,7,14,5,12,4,20,16,13,17];
 
 

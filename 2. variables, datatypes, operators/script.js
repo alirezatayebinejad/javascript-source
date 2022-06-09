@@ -21,6 +21,7 @@ let isMale = true; //boolean  only true or false
 let noseSize = null; //null  means empty variable
 let feetSize; //undefined means varible has no values
 let myCars = ["bmw", "benz", "porshe"]; //arrays can store more than one value can be number, string, boolean & ...
+let aCar = ["bmw", 2500, true]; //arrays can contain any of variable type
 
 console.log(typeof myAge); // typeof shows the type of the variable
 
@@ -38,7 +39,6 @@ console.log(Number(false)); // 0
 
 let value = true; // boolean
 value = String(value); // string
-
 console.log(Boolean(1)); // true
 console.log(Boolean(0)); // false
 console.log(Boolean("hello")); // true
