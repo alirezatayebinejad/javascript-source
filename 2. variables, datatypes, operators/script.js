@@ -22,6 +22,13 @@ let noseSize = null; //null  means empty variable
 let feetSize; //undefined means varible has no values
 let myCars = ["bmw", "benz", "porshe"]; //arrays can store more than one value can be number, string, boolean & ...
 let aCar = ["bmw", 2500, true]; //arrays can contain any of variable type
+let Ali = { name: "ali", last: "ahmadi", age: 22 }; //objects
+Ali.age; //22
+let students = [
+  { name: "ali", last: "ahmadi", age: 22 },
+  { name: "reza", last: "alavi", age: 25 },
+]; //arrays of objects
+students[2].age; //25
 
 console.log(typeof myAge); // typeof shows the type of the variable
 
@@ -31,7 +38,6 @@ userName = prompt("Enter your name: "); //gets input
 
 //data type conversion
 let ageString = "22";
-
 console.log(Number("   123   ")); // 123
 console.log(Number("123z")); // NaN (error reading a number at "z")
 console.log(Number(true)); // 1
@@ -56,10 +62,9 @@ let remain = a % b; //1
 let exponentiation = a ** b; //32
 a++; //a=3
 b--; //b=4
-a=a+5; //or a+=5; or any operator instead of +
-let c=2;
+a = a + 5; //or a+=5; or any operator instead of +
+let c = 2;
 let d;
-d=c++;//d=2
-c=2;
-d=++c;//d=3
-
+d = c++; //d=2
+c = 2;
+d = ++c; //d=3
