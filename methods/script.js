@@ -76,3 +76,11 @@ let scoresPower= scores.map(function (score){
 let under15=scores.filter(function (score){
   return score<15;//returns elements that are only less than 15 and store it in under15 array
 });
+Array.isArray(scores);//checks if the given input is array or not returns true false
+scores.indexOf(5);//return the index of given number in array or returns -1 if it doesnt find
+scores.lastIndexOf(5);//return the index of given number in array (the last one) or returns -1 if it doesnt find
+scores.slice(2,5);//returns all element from index 2 to index 5
+scores.join('/');//conect all elements together with / between
+scores.reverse();//reverse array elements
+theName='alireza';
+theName.split('');//convert a string to array. input can be a character to seperat with in string
