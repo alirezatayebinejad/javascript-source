@@ -46,7 +46,7 @@ let scores = [15, 14, 5, 12, 4, 20];
 let students = [
   { name: "ali", last: "ahmadi", age: 22 },
   { name: "reza", last: "alavi", age: 25 },
-  { name: "sara", last: "mohseni", age: 20 }
+  { name: "sara", last: "mohseni", age: 20 },
 ];
 
 scores[6] = 16; //adds the next array value now scores=[15,14,5,12,4,20,16];
@@ -54,15 +54,25 @@ scores.push(13, 17, 1); //push values into array scores=[15,14,5,12,4,20,16,13,1
 scores.pop(); //pop out the last value from array scores=[15,14,5,12,4,20,16,13,17];
 scores.shift(); //delets first element of array scores=[14,5,12,4,20,16,13,17];
 scores.unshift(8, 7); //add to first of array scores=[8,7,14,5,12,4,20,16,13,17];
+scores.splice(2, 3); //delets arrays element starting from 2 to 3 times after (2,3,other inputs to replace what we deleted)scores=[8,7,20,16,13,17];
 scores.includes(4); //true if it finds & false if it doesnt find - we can use a second input as sart index
 students.forEach(function (number) {
   console.log(number.age);
 }); //function will execute 2 times (array length) and every time one array value goes into function input as number variable + for objects & arrays
-var isInUsers = students.some(function (user) {
+let isInUsers = students.some(function (user) {
   console.log(user);
   return user.name == "reza";
-});//like forEach but it returns true or false and function codes will execute for every array elements untill it reaches a true then stops
-var isAll = ages.every(function (age) {
-	console.log(age);
-	return age > 18;
+}); //like forEach but it returns true or false and function codes will execute for every array elements untill it reaches a true then stops
+let isAll = ages.every(function (age) {
+  console.log(age);
+  return age > 18;
 }); //like some but it will stop executing when it reaches a false and return true or false
+let studentIndex = students.findIndex(function (st) {
+  return st.age == 25; // 1 returns index of array element which the condition is true. executed loop untill find the element
+});
+let scoresPower= scores.map(function (score){
+  return score**2;//do this to every element of array and return it to another array (in scoresPower)
+});
+let under15=scores.filter(function (score){
+  return score<15;//returns elements that are only less than 15 and store it in under15 array
+});
