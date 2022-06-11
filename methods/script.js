@@ -70,6 +70,9 @@ let isAll = ages.every(function (age) {
 let studentIndex = students.findIndex(function (st) {
   return st.age == 25; // 1 returns index of array element which the condition is true. executed loop untill find the element
 });
+let studentInfo = students.find(function (st) {
+  return st.age == 25; // 1 returns all info of array element which the condition is true. executed loop untill gets true
+});
 let scoresPower= scores.map(function (score){
   return score**2;//do this to every element of array and return it to another array (in scoresPower)
 });
