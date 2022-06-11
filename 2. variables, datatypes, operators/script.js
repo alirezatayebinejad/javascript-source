@@ -68,3 +68,16 @@ let d;
 d = c++; //d=2
 c = 2;
 d = ++c; //d=3
+
+
+
+/*primitive variable vs reference data types
+
+primitive: number bigInt boolean symbol null undefined string
+
+a=b    '=' means we make copy of b to a when we change b or a later the other one will not change
+
+reference: objects array function
+
+a=b    '=' means a is equal to b and whenever we change a or b the othe one will change too!
+*/
