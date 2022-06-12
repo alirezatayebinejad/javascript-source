@@ -60,6 +60,7 @@ students.forEach(function (number) {
   console.log(number.age);
 }); //function will execute 2 times (array length) and every time one array value goes into function input as number variable + for objects & arrays
 let isInUsers = students.some(function (user) {
+  //enonymous function
   console.log(user);
   return user.name == "reza";
 }); //like forEach but it returns true or false and function codes will execute for every array elements untill it reaches a true then stops
@@ -73,17 +74,34 @@ let studentIndex = students.findIndex(function (st) {
 let studentInfo = students.find(function (st) {
   return st.age == 25; // 1 returns all info of array element which the condition is true. executed loop untill gets true
 });
-let scoresPower= scores.map(function (score){
-  return score**2;//do this to every element of array and return it to another array (in scoresPower)
+let scoresPower = scores.map(function (score) {
+  return score ** 2; //do this to every element of array and return it to another array (in scoresPower)
 });
-let under15=scores.filter(function (score){
-  return score<15;//returns elements that are only less than 15 and store it in under15 array
+let under15 = scores.filter(function (score) {
+  return score < 15; //returns elements that are only less than 15 and store it in under15 array
 });
-Array.isArray(scores);//checks if the given input is array or not returns true false
-scores.indexOf(5);//return the index of given number in array or returns -1 if it doesnt find
-scores.lastIndexOf(5);//return the index of given number in array (the last one) or returns -1 if it doesnt find
-scores.slice(2,5);//returns all element from index 2 to index 5
-scores.join('/');//conect all elements together with / between
-scores.reverse();//reverse array elements
-theName='alireza';
-theName.split('');//convert a string to array. input can be a character to seperat with in string
+Array.isArray(scores); //checks if the given input is array or not returns true false
+scores.indexOf(5); //return the index of given number in array or returns -1 if it doesnt find
+scores.lastIndexOf(5); //return the index of given number in array (the last one) or returns -1 if it doesnt find
+scores.slice(2, 5); //returns all element from index 2 to index 5
+scores.join("/"); //conect all elements together with / between
+scores.reverse(); //reverse array elements
+theName = "alireza";
+theName.split(""); //convert a string to array. input can be a character to seperat with in string
+
+//function methods
+var i = 10;
+var timer = setInterval(function () {
+  if (i === 0) {
+    alert("Game Over");
+    clearInterval(timer);
+  }
+  console.log(i);
+  i--;
+}, 1000); // function re execute every 1000ms = 1s
+setTimeout(function () {
+  
+  console.log("hello");
+  
+}, 5000);//function executed after 5000ms = 1s - function can have input and it should send from anothe parameter after 5000
+

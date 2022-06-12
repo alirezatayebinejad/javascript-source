@@ -39,3 +39,16 @@ function sumNumbers (num1, num2) {
 }
 
 let sumResult = sumNumbers(2, 8);
+
+
+//anonymous function
+students.some(function (user) { // we can not call them
+  console.log(user);
+  return user.name == "reza";
+});
+
+//IIFE functions 
+(function(){ //it calls itself
+  console.log("IIFE function");
+})()
+

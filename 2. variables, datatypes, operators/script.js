@@ -31,6 +31,10 @@ let students = [
 students[2].age; //25
 
 console.log(typeof myAge); // typeof shows the type of the variable
+/*truthy and falsy values:
+falsy: zero number, empty charachter, undefined,NaN,empty array
+true: other than falsy values
+*/
 
 //get input from user and store it in a variable
 let userName;
@@ -81,3 +85,4 @@ reference: objects array function
 
 a=b    '=' means a is equal to b and whenever we change a or b the othe one will change too!
 */
+
