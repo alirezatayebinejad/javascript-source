@@ -1,19 +1,15 @@
 //varaiables are for store data in a place so we can use that data later in our program
 
 // how to declare variables
-let name = "alireza";
-var time = 12;
-const age = 24;
+var time = 12;// no scoping, can be defined multiple times with the same name, can be defined after assignment etc #not_good
+let name = "alireza";// has scoping, can not defined multiple times with the same name or after assignment #good
+const age = 24;// can not changed during program also should have value in the first place
+//always use let and const
 
-//to show variable we can use alert but better option is consol.log
-//consol.log shows in consol section in browser inspect tool
-console.log(name);
-console.log(age);
+console.log(name);//to show variable we can use alert but better option is consol.log
+console.log(age);//consol.log shows in consol section in browser inspect tool
 
-// we should allways use let because var is old
-// const is for constant variables means that the value can not change later in program but let can
-
-//data types
+//data types//////////////////////////////////////////////////////////////////////////
 
 let myName = "alireza"; //string between " " or ' '
 let myAge = 22; //number
@@ -28,12 +24,12 @@ let students = [
   { name: "ali", last: "ahmadi", age: 22 },
   { name: "reza", last: "alavi", age: 25 },
 ]; //arrays of objects
-students[2].age; //25
+students[1].age; //25
 
 console.log(typeof myAge); // typeof shows the type of the variable
 /*truthy and falsy values:
 falsy: zero number, empty charachter, undefined,NaN,empty array
-true: other than falsy values
+truthy: other than falsy values
 */
 
 //get input from user and store it in a variable
@@ -42,7 +38,9 @@ userName = prompt("Enter your name: "); //gets input
 
 //data type conversion
 let ageString = "22";
-console.log(Number("   123   ")); // 123
+console.log(+ageString);//22 number
+console.log(Number(ageString));//22 number
+console.log(Number("   123   ")); // 123 number
 console.log(Number("123z")); // NaN (error reading a number at "z")
 console.log(Number(true)); // 1
 console.log(Number(false)); // 0
@@ -54,9 +52,9 @@ console.log(Boolean(0)); // false
 console.log(Boolean("hello")); // true
 console.log(Boolean("")); // false
 
-//operators
+//operators////////////////////////////////////////////////////////////////////////
 let a = 2,
-  b = 5;
+ b = 5;
 
 let plus = a + b; //7
 let minus = a - b; //-3

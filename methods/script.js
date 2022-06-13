@@ -1,11 +1,9 @@
 //print
 console.log("any variable or value here"); //prints to the console in browser inspedt tool
+let theName = "methods";
+alert("file name: " + theName + "\n" + 'this file contains all "methods" we need');
 
-let name = "methods";
-alert("file name: " + name + "\n" + 'this file contains all "methods" we need');
-
-isNaN("value"); //if value is number: output=true else output=false
-
+isNaN("value"); //if value is number(int or stringnum): output=false else output=true
 prompt("enter your name: "); // get a value from user
 
 //string methods

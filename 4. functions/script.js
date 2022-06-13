@@ -1,12 +1,12 @@
 //function declaration
 function fName() {
   //these codes will execute if function call anywhere in program
-}
+};
 //calling function
 fName();
 
 //function expression
-let fName = function () {
+let fName2 = function () {
   //these codes will execute if function call anywhere in program
 };
 //calling function
@@ -14,14 +14,14 @@ fName2();
 
 //function parameter
 function fName(parameterName) {
-  //we can get two or more parameter using camma between
+  //we can get two or more parameter using camma in between
   //these codes will execute if function call anywhere in program
   // we can use parameterName here in codes
 }
 //calling function
-fName("parameterName value here"); //we can send two or more parameter using camma between
+fName("parameterName value here"); //we can send two or more parameter using camma in between
 //if we dont send an input varible the varible will be undefined
-//wecan assign to input variable inside the function
+//we can assign to input variable inside the function
 
 //example
 function averageCalculator (num1, num2, num3) {
