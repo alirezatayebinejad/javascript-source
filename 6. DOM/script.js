@@ -27,11 +27,7 @@ newLiItem.setAttribute('class','list-item');
 ulElem.append(newLiItem);//this
 ulElem.appendChild(newLiItem);//or this
 
-//events
-/*
-    add onclick="funcName()" attribute to html element
-    oneclick is an event and the function will execute if user click on this element
-*/
+
 
 
 
