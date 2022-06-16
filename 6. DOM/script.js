@@ -26,6 +26,11 @@ newLiItem.innerHtml='products';
 newLiItem.setAttribute('class','list-item');
 ulElem.append(newLiItem);//this
 ulElem.appendChild(newLiItem);//or this
+//add or remove css classes
+h1Elem.classList.add('classname');//adds class
+h1Elem.classList.remove('classname');//removes class
+h1Elem.classList.toggle('classname');//adds class if it doesnt exist removes class if it exist
+
 
 
 

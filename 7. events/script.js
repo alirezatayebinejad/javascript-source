@@ -32,6 +32,7 @@ theElem.addEventListener('click',function(){
 
     onclick
     ondblclick  //when double click on an element
-    
 
+    onchange    //when value of an element changes
+    
 */
