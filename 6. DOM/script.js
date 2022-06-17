@@ -24,8 +24,8 @@ let ulElem = document.querySelector('ul');
 let newLiItem=document.createElement('li');
 newLiItem.innerHtml='products';
 newLiItem.setAttribute('class','list-item');
-ulElem.append(newLiItem);//this
-ulElem.appendChild(newLiItem);//or this
+ulElem.append(newLiItem);//this //can be any string or node //can have multiple inputes //can not return anything in a variable
+ulElem.appendChild(newLiItem);//or this //just add Node (html element) // just one input //can return nodes to a variable
 //add or remove css classes
 h1Elem.classList.add('classname');//adds class
 h1Elem.classList.remove('classname');//removes class
