@@ -8,8 +8,11 @@ let firstListItem = document.querySelector('#box');
 let ulItems = document.querySelectorAll('.list-item');
 let inputElement = document.getElementById('input');
 //get & set attribute
-h1Elem.getAttribute('class');
+h1Elem.getAttribute('class'); //can get any attribute even those who are not reall html attribute unlike . // can not get a setted propert for html element directly in js
 h1Elem.setAttribute('id','about');
+//get attribute with .
+h1Elem.id;//gets only reall html attribue/object property //can get a setted propert for html element directly in js like the code bellow //but for class we should use .className
+h1Elem.NewProperty='new attribute'; 
 //set css style
 h1Elem.style.color='blue';//any css property
 h1Elem.style.fontWeight='bold';

@@ -23,7 +23,7 @@ theElem.addEventListener('click',function(){
     
     other events:
 
-    onkeypress //just keys that are charachters or numbers
+    onkeypress //just keys that are charachters or numbers tha can be typed
     onkeydown  // almost all keys
     onkeyup    
     
