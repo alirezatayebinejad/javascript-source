@@ -36,6 +36,12 @@ theElem.addEventListener('click',function(){
     onchange    //when value of an element changes
 
     onsubmit //when user click the form submit button sets for input type=submit
+
+    oncontextmenu //when right click on elemen //can prevent right click with return false instead of function call
+
+    oncopy
+    oncut
+    onpaste
     
 */
 
