@@ -10,9 +10,15 @@ let inputElement = document.getElementById('input');
 //get & set attribute
 h1Elem.getAttribute('class'); //can get any attribute even those who are not reall html attribute unlike . // can not get a setted propert for html element directly in js
 h1Elem.setAttribute('id','about');
+h1Elem.onclick = function(){
+    //do sth //this is another way to set an attribute and call a funciton
+} 
 //get attribute with .
 h1Elem.id;//gets only reall html attribue/object property //can get a setted propert for html element directly in js like the code bellow //but for class we should use .className
 h1Elem.NewProperty='new attribute'; 
+//check or remove attribute
+h1Elem.removeAttribute('placeholder');//removes a specific attribute 
+h1Elem.hasAttribute('href');//checks if an element has a specific attribute or not / tru or false
 //set css style
 h1Elem.style.color='blue';//any css property
 h1Elem.style.fontWeight='bold';
@@ -33,6 +39,18 @@ ulElem.appendChild(newLiItem);//or this //just add Node (html element) // just o
 h1Elem.classList.add('classname');//adds class
 h1Elem.classList.remove('classname');//removes class
 h1Elem.classList.toggle('classname');//adds class if it doesnt exist removes class if it exist
+
+//event minipulation
+h1Elem.addEventListener('submit',function(event){
+    console.log(event);//it logs all element event properties which can be used to minipulate the element and user interaction
+    event.target; // an example of a proprty that returns the element
+    //other properties can be seen in consol.log(event)
+})
+
+//Nodes
+h1Elem.nodeName //name of the node
+h1Elem.nodeType //type number of node
+
 
 
 

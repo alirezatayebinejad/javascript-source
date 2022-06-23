@@ -34,5 +34,11 @@ theElem.addEventListener('click',function(){
     ondblclick  //when double click on an element
 
     onchange    //when value of an element changes
+
+    onsubmit //when user click the form submit button sets for input type=submit
     
 */
+
+//prevent an event default behaviour
+event.preventDefault(); // just for element that cancelable is true
+
