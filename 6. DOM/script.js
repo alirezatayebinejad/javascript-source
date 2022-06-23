@@ -35,6 +35,8 @@ newLiItem.innerHtml='products';
 newLiItem.setAttribute('class','list-item');
 ulElem.append(newLiItem);//this //can be any string or node //can have multiple inputes //can not return anything in a variable
 ulElem.appendChild(newLiItem);//or this //just add Node (html element) // just one input //can return nodes to a variable
+//remove elements from dom
+ulElem.remove(); // just remove a single element not array 
 //add or remove css classes
 h1Elem.classList.add('classname');//adds class
 h1Elem.classList.remove('classname');//removes class
