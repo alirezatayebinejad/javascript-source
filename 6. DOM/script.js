@@ -51,6 +51,24 @@ h1Elem.addEventListener('submit',function(event){
 h1Elem.nodeName //name of the node
 h1Elem.nodeType //type number of node
 
+//siblings minipulation
+head3.parentNode; // node can be enything like comments texts etc...
+head1.parentElement; // parent element
+
+head3.previousElementSibling.previousElementSibling;//two previous sibling element
+head3.nextElementSibling.nextElementSibling.nextElementSibling;//three previous sibling element
+listItems[2].nextSibling.nextSibling; //this one returns not just a element but any next node like comments newLine etc...
+listItems[2].previousSibling.previousSibling.previousSibling.previousSibling;
+listItems[2].previousElementSibling;
+
+list.childElementCount;//number of child elements
+list.children[2];//choose which child element of an element
+list.childNodes;//returns all element child plus every other nodes like comment newline etc...
+list.hasChildNodes(); // Boolean wheater has a child or not
+list.firstChild;
+list.lastChild;
+list.firstElementChild; //just elementNode
+list.lastElementChild.firstElementChild.style.color = 'red';
 
 
 
