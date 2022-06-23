@@ -16,6 +16,8 @@ theElem.addEventListener('click',function(){
 });
 */
 
+//remove events
+theElem.removeEventListener('click',funcName)
 
 
 //events
@@ -43,6 +45,18 @@ theElem.addEventListener('click',function(){
     oncut
     onpaste
     
+    onload  //when an element loaded
+    DOMContentLoaded //like onload but here just after dom loaded not css js etc...
+    unonload
+    onbeforonload
+
+    onmousmove
+    onselect //when a text selected just for input and textarea
+
+    ontouchstart
+    ontouchmove
+    ontouchend
+    ontouchcancel
 */
 
 //prevent an event default behaviour
