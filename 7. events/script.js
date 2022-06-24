@@ -63,3 +63,9 @@ theElem.removeEventListener('click',funcName)
 //prevent an event default behaviour
 event.preventDefault(); // just for element that cancelable is true
 
+//defer & async
+/*
+add defer attribute no value to a html script element to start downloading script file while move on and parsing Dom
+add async attribute no value to a html script element to start downloading script file while move on and parsing Dom
+with async script file may execute in the middle of parsing dom but defer wait till the end so the defer is better
+*/
