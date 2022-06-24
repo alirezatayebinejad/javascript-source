@@ -73,7 +73,21 @@ list.firstElementChild; //just elementNode
 list.lastElementChild.firstElementChild.style.color = 'red';
 
 
+//scroll
+window.scrollTo(x,y);//scroll x & y of page
+window.scrollTo(x,y);//scroll x & y of where we are now
 
+//datasets //we can add custom attributes to html elements and access with dataset
+//add data-anyName="value" to html elements
+//can be accessed in js like:
+event.target.dataset.anyName;
+
+//access html audio or video properties
+audvidElem.play();
+audvidElem.pause();
+audvidElem.duration();//returns in seconds
+audvidElem.currentTime();//in seconds
+audvidElem.playBackRate();
 
 
 
