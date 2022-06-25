@@ -58,6 +58,23 @@ theElem.removeEventListener('click',funcName)
     ontouchmove
     ontouchend
     ontouchcancel
+
+    //drag and drops events
+    //for dragged element
+    draggable="true" // to make an element draggable
+    ondragstart
+    ondrag
+    ondragend
+    //for the element that we want to drop in
+    ondragenter
+    ondragover // for the element that we want to drag into
+    ondragleave
+    ondrop // make it droppable in :|
+    //to get an alement and drag in elsewher
+    event.dataTransfer.setData('idname',event.target.id)
+    event.dataTransfer.getData('thatidname')
+
+    
 */
 
 //prevent an event default behaviour
