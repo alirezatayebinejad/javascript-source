@@ -74,6 +74,12 @@ theElem.removeEventListener('click',funcName)
     event.dataTransfer.setData('idname',event.target.id)
     event.dataTransfer.getData('thatidname')
 
+    //animations
+    //firs set an animation to an element with css
+    onanimationstart
+    onanimationiteration
+    onanimationend
+
     
 */
 

@@ -22,6 +22,8 @@ h1Elem.hasAttribute('href');//checks if an element has a specific attribute or n
 //set css style
 h1Elem.style.color='blue';//any css property
 h1Elem.style.fontWeight='bold';
+let allnonInlineStyles= getComputedStyle(boxElem);//for external or internal (not inline!) styles
+allnonInlineStyles.backgroundColor;
 //get and change inside of html tags
 liElems[2].innerHTML;//all three show the value of element
 liElems[2].innerText;
