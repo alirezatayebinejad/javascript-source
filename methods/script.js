@@ -117,4 +117,6 @@ myTime.getTime();  //Get the time (milliseconds since January 1, 1970)
 myTime.getDate();  //Get the weekday as a number (0-6)
 Date.now();  //Get the time. ECMAScript 5.
 
-
+//window
+window.innerHeight;//returns height of the users window
+window.innerWidth;
