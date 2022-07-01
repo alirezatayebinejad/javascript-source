@@ -80,6 +80,8 @@ theElem.removeEventListener('click',funcName)
     onanimationiteration
     onanimationend
 
+    //resize window.
+    onresize //apply to window
     
 */
 
