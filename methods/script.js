@@ -103,3 +103,18 @@ setTimeout(function () {
   
 }, 5000);//function executed after 5000ms = 1s - function can have input and it should send from anothe parameter after 5000
 
+//dates method
+let myTime = new Date();
+myTime;//returns all time information
+myTime.getFullYear();  //Get the year as a four digit number (yyyy)
+myTime.getMonth();  //Get the month as a number (0-11)
+myTime.getDate();  //Get the day as a number (1-31)
+myTime.getHours();  //Get the hour (0-23)
+myTime.getMinutes();  //Get the minute (0-59)
+myTime.getSeconds();  //Get the second (0-59)
+myTime.getMilliseconds();  //Get the millisecond (0-999)
+myTime.getTime();  //Get the time (milliseconds since January 1, 1970)
+myTime.getDate();  //Get the weekday as a number (0-6)
+Date.now();  //Get the time. ECMAScript 5.
+
+

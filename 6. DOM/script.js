@@ -19,11 +19,14 @@ h1Elem.NewProperty='new attribute';
 //check or remove attribute
 h1Elem.removeAttribute('placeholder');//removes a specific attribute 
 h1Elem.hasAttribute('href');//checks if an element has a specific attribute or not / tru or false
-//set css style
+//get & set css style
 h1Elem.style.color='blue';//any css property
 h1Elem.style.fontWeight='bold';
 let allnonInlineStyles= getComputedStyle(boxElem);//for external or internal (not inline!) styles
 allnonInlineStyles.backgroundColor;
+h1Elem.style.cssText='color: red; background-color:blue;'//write exacly the css properties
+document.documentElement.style.setProperty('--varName','value');//for setting or changing css variables
+document.documentElement.style.getPropertyValue('==varName');//returns the var value
 //get and change inside of html tags
 liElems[2].innerHTML;//all three show the value of element
 liElems[2].innerText;
