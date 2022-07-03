@@ -53,6 +53,12 @@ theElem.removeEventListener('click',funcName)
     onmousmove
     onselect //when a text selected just for input and textarea
     onscroll //can use with some properties like document.documentElement.scrollTop/left
+    onmousedown
+    onmousup
+    onmousenter //like hovering on sth
+    onmousleave //oposit of enter
+    onmousehover//like enter
+    onmouseout  //like leave
 
     ontouchstart
     ontouchmove
