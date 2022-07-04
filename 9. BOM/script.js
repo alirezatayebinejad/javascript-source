@@ -40,6 +40,7 @@ location.search;
 location.hash;
 location.href;
 location.href='redirect to this URL';
+location.reload();
 //to get a data rely on a data in url search
 let locationSearchParam=new URLSearchParams(location.search);
 let userIDParam = locationSearchParam.get('id');//returns the value of id in search like ?id=3 returns 3

@@ -88,6 +88,10 @@ theElem.removeEventListener('click',funcName)
 
     //resize window.
     onresize //apply to window
+
+
+    ononline //when user becomes online
+    onoffline
     
 */
 
