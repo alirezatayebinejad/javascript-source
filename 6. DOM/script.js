@@ -40,6 +40,7 @@ newLiItem.innerHtml='products';
 newLiItem.setAttribute('class','list-item');
 ulElem.append(newLiItem);//this //can be any string or node //can have multiple inputes //can not return anything in a variable
 ulElem.appendChild(newLiItem);//or this //just add Node (html element) // just one input //can return nodes to a variable
+ulElem.insertAdjacentHTML(position,'html code')//positons: beforbegin - afterbegin - beforend - afterend
 //remove elements from dom
 ulElem.remove(); // just remove a single element not array 
 //add or remove css classes
@@ -94,6 +95,14 @@ audvidElem.duration();//returns in seconds
 audvidElem.currentTime();//in seconds
 audvidElem.playBackRate();
 
+
+//fragment - important for website performance
+//instead of create an html element in a foreach and connect and sent multiple times to the browser which take time
+let elemFragment=document.createDocumentFragment();//create a fragment to store elements that we created
+let newElem=document.createElement('li'); //create elements
+elemFragment.appendChild(newElem); //send them to fragment
+//when all elements added to fragment then we connect once to browser and send all of them
+liElems.appendChild(elemFragment);
 
 
 
