@@ -1,4 +1,5 @@
-// with DOM we can minipulate web page elements
+// Document Object Model
+// with DOM we can minipulate web page document elements
 
 // get elements
 let h1Elem = document.getElementById('title');
