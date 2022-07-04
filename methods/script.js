@@ -120,3 +120,30 @@ Date.now();  //Get the time. ECMAScript 5.
 //window
 window.innerHeight;//returns height of the users window
 window.innerWidth;
+
+//console
+let num1 = 2;
+let num2 = 3;
+console.log(num1 + num2);
+console.error('Data is not defined');
+console.info('Api response status is 404');
+console.warn('Api response status is 404');
+console.assert(num1 + num2 < 10, 'BIG'); //checks the condition if true print the string
+let products = [
+  { id: 1, name: 'LapTop', price: 12000000 },
+  { id: 2, name: 'Phone', price: 7000000 },
+  { id: 3, name: 'SSD Hard', price: 2000000 },
+  { id: 4, name: 'Cool Pad', price: 500000 },
+]
+console.table(products); //prints the product in a table
+console.time('For loop');
+for (let i = 0 ; i < 1000000 ; i++) {
+     //Codes
+}
+console.timeEnd('For loop');//print time of execution of the codes in between
+console.group('first logs');
+console.log('First log in gp');
+console.log('Second log in gp');
+console.log('Third log in gp');
+console.groupEnd('first logs');//groups all logs in between
+console.log('%cApi reponse status in 200', "color: red;");//change color of a log
