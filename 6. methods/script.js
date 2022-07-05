@@ -1,7 +1,9 @@
 //print
-console.log("any variable or value here"); //prints to the console in browser inspedt tool
+console.log("any variable or value here"); //prints to the console in browser inspect tool
 let theName = "methods";
-alert("file name: " + theName + "\n" + 'this file contains all "methods" we need');
+alert(
+  "file name: " + theName + "\n" + 'this file contains all "methods" we need'
+);
 
 isNaN("value"); //if value is number(int or stringnum): output=false else output=true
 prompt("enter your name: "); // get a value from user
@@ -15,8 +17,8 @@ text.charAt(2); //i
 text.charCodeAt(2); //i=72 asci code
 text.concat(" so true"); //alireza is the best so true
 text.trim(); //delete all spaces before and after string not between
-text.toLowerCase(); //lowercase all string charachters
-text.toUpperCase(); //upercase all string charachters
+text.toLowerCase(); //lowercase all string characters
+text.toUpperCase(); //upercase all string characters
 text.search("is"); //return the index of start char of 'is' in string
 text.indexOf("is"); //like search
 text.includes("is"); //true if 'is' exist in string otherwise false
@@ -52,11 +54,11 @@ scores.push(13, 17, 1); //push values into array scores=[15,14,5,12,4,20,16,13,1
 scores.pop(); //pop out the last value from array scores=[15,14,5,12,4,20,16,13,17];
 scores.shift(); //delets first element of array scores=[14,5,12,4,20,16,13,17];
 scores.unshift(8, 7); //add to first of array scores=[8,7,14,5,12,4,20,16,13,17];
-scores.splice(2, 3); //delets arrays element starting from 2 to 3 times after (2,3,other inputs to replace what we deleted)scores=[8,7,20,16,13,17];
+scores.splice(2, 3); //delets arrays element starting from 2 to 3 times (2,3,other inputs to replace what we deleted)scores=[8,7,20,16,13,17];
 scores.includes(4); //true if it finds & false if it doesnt find - we can use a second input as sart index
 students.forEach(function (number) {
   console.log(number.age);
-}); //function will execute 2 times (array length) and every time one array value goes into function input as number variable + for objects & arrays
+}); //function will execute 0 to 2 times  (array length) and every time one array value goes into function input as number variable + for objects & arrays
 let isInUsers = students.some(function (user) {
   //enonymous function
   console.log(user);
@@ -76,7 +78,7 @@ let scoresPower = scores.map(function (score) {
   return score ** 2; //do this to every element of array and return it to another array (in scoresPower)
 });
 let under15 = scores.filter(function (score) {
-  return score < 15; //returns elements that are only less than 15 and store it in under15 array
+  return score < 15; //returns elements that are only less than 15 and store it in under 15 array
 });
 Array.isArray(scores); //checks if the given input is array or not returns true false
 scores.indexOf(5); //return the index of given number in array or returns -1 if it doesnt find
@@ -96,54 +98,53 @@ var timer = setInterval(function () {
   }
   console.log(i);
   i--;
-}, 1000); // function re execute every 1000ms = 1s
+}, 1000); // function reexecute every 1000ms = 1s
 setTimeout(function () {
-  
   console.log("hello");
-  
-}, 5000);//function executed after 5000ms = 1s - function can have input and it should send from anothe parameter after 5000
+}, 5000); //function executed after 5000ms = 1s - function can have input and it should send from anothe parameter after 5000
 
 //dates method
 let myTime = new Date();
-myTime;//returns all time information
-myTime.getFullYear();  //Get the year as a four digit number (yyyy)
-myTime.getMonth();  //Get the month as a number (0-11)
-myTime.getDate();  //Get the day as a number (1-31)
-myTime.getHours();  //Get the hour (0-23)
-myTime.getMinutes();  //Get the minute (0-59)
-myTime.getSeconds();  //Get the second (0-59)
-myTime.getMilliseconds();  //Get the millisecond (0-999)
-myTime.getTime();  //Get the time (milliseconds since January 1, 1970)
-myTime.getDate();  //Get the weekday as a number (0-6)
-Date.now();  //Get the time. ECMAScript 5.
+myTime; //returns all time information
+myTime.getFullYear(); //Get the year as a four digit number (yyyy)
+myTime.getMonth(); //Get the month as a number (0-11)
+myTime.getDay(); //Get the day as a number (0-6)
+myTime.getHours(); //Get the hour (0-23)
+myTime.getMinutes(); //Get the minute (0-59)
+myTime.getSeconds(); //Get the second (0-59)
+myTime.getMilliseconds(); //Get the millisecond (0-999)
+myTime.getTime(); //Get the time (milliseconds since January 1, 1970)
+myTime.getDate(); //Get the day in mounth date (1-31)
+Date.now(); //Get the time. ECMAScript 5.
 
 //window
-window.innerHeight;//returns height of the users window
+window.innerHeight; //returns height of the users window
 window.innerWidth;
+//more in BOM
 
 //console
 let num1 = 2;
 let num2 = 3;
 console.log(num1 + num2);
-console.error('Data is not defined');
-console.info('Api response status is 404');
-console.warn('Api response status is 404');
-console.assert(num1 + num2 < 10, 'BIG'); //checks the condition if true print the string
+console.error("Data is not defined");
+console.info("Api response status is 404");
+console.warn("Api response status is 404");
+console.assert(num1 + num2 < 10, "BIG"); //checks the condition if true print the string
 let products = [
-  { id: 1, name: 'LapTop', price: 12000000 },
-  { id: 2, name: 'Phone', price: 7000000 },
-  { id: 3, name: 'SSD Hard', price: 2000000 },
-  { id: 4, name: 'Cool Pad', price: 500000 },
-]
+  { id: 1, name: "LapTop", price: 12000000 },
+  { id: 2, name: "Phone", price: 7000000 },
+  { id: 3, name: "SSD Hard", price: 2000000 },
+  { id: 4, name: "Cool Pad", price: 500000 },
+];
 console.table(products); //prints the product in a table
-console.time('For loop');
-for (let i = 0 ; i < 1000000 ; i++) {
-     //Codes
+console.time("For loop");
+for (let i = 0; i < 1000000; i++) {
+  //Codes
 }
-console.timeEnd('For loop');//print time of execution of the codes in between
-console.group('first logs');
-console.log('First log in gp');
-console.log('Second log in gp');
-console.log('Third log in gp');
-console.groupEnd('first logs');//groups all logs in between
-console.log('%cApi reponse status in 200', "color: red;");//change color of a log
+console.timeEnd("For loop"); //print time of execution of the codes in between
+console.group("first logs");
+console.log("First log in gp");
+console.log("Second log in gp");
+console.log("Third log in gp");
+console.groupEnd("first logs"); //groups all logs in between
+console.log("%cApi reponse status in 200", "color: red;"); //change color of a log

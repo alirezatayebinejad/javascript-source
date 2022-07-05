@@ -16,15 +16,15 @@ while (i < 10) {
 }
 //example
 myName = "alireza programmer";
-i=0;
-while(i<myName.length()){
-    console.log(i, " => ", myName[i]);
-    i++;
+i = 0;
+while (i < myName.length()) {
+  console.log(i, " => ", myName[i]);
+  i++;
 }
 
 //do while
-i=0;
-do{
-    //these codes will be executed 10 times but it will be executed once whether condition is true or not
-    i++;
-}while(i < 10);
+i = 0;
+do {
+  //these codes will be executed 10 times but it will be executed once whether condition is true or not
+  i++;
+} while (i < 10);
