@@ -42,7 +42,7 @@ let sumResult = sumNumbers(2, 8);
 
 
 //anonymous function
-students.some(function (user) { // we can not call them
+students.some(function (user) { // we can not call them //some is a method that reads all variable values send it as user to input of anonymous function
   console.log(user);
   return user.name == "reza";
 });

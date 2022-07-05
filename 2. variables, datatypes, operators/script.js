@@ -1,13 +1,13 @@
 //varaiables are for store data in a place so we can use that data later in our program
 
 // how to declare variables
-var time = 12;// no scoping, can be defined multiple times with the same name, can be defined after assignment etc #not_good
-let name = "alireza";// has scoping, can not defined multiple times with the same name or after assignment #good
-const age = 24;// can not changed during program also should have value in the first place
+var time = 12; // no scoping, can be defined multiple times with the same name, can be defined after assignment etc #not_good
+let name = "alireza"; // has scoping, can not defined multiple times with the same name or after assignment #good
+const age = 24; // can not changed during program also should have value in the first place
 //always use let and const
 
-console.log(name);//to show variable we can use alert but better option is consol.log
-console.log(age);//consol.log shows in consol section in browser inspect tool
+console.log(name); //to show variable we can use alert but better option is consol.log
+console.log(age); //consol.log shows in consol section in browser inspect tool
 
 //data types//////////////////////////////////////////////////////////////////////////
 
@@ -38,8 +38,8 @@ userName = prompt("Enter your name: "); //gets input
 
 //data type conversion
 let ageString = "22";
-console.log(+ageString);//22 number
-console.log(Number(ageString));//22 number
+console.log(+ageString); //22 number
+console.log(Number(ageString)); //22 number
 console.log(Number("   123   ")); // 123 number
 console.log(Number("123z")); // NaN (error reading a number at "z")
 console.log(Number(true)); // 1
@@ -54,7 +54,7 @@ console.log(Boolean("")); // false
 
 //operators////////////////////////////////////////////////////////////////////////
 let a = 2,
- b = 5;
+  b = 5;
 
 let plus = a + b; //7
 let minus = a - b; //-3
@@ -71,8 +71,6 @@ d = c++; //d=2
 c = 2;
 d = ++c; //d=3
 
-
-
 /*primitive variable vs reference data types
 
 primitive: number bigInt boolean symbol null undefined string
@@ -83,4 +81,3 @@ reference: objects array function
 
 a=b    '=' means a is equal to b and whenever we change a or b the othe one will change too!
 */
-
