@@ -22,6 +22,7 @@ text.toUpperCase(); //upercase all string characters
 text.search("is"); //return the index of start char of 'is' in string
 text.indexOf("is"); //like search
 text.includes("is"); //true if 'is' exist in string otherwise false
+text.startsWith("is");
 text.slice(8, 13); //'is the' number of index, to this index
 text.substr(8, 6); //'is the' number of index, this number after the first number
 text.substring(8, 13); //'is the' number of index, to this index like slice

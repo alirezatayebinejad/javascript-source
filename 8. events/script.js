@@ -15,6 +15,25 @@ theElem.addEventListener('click',function(){
 });
 
 */
+//event happens only once
+let btn = document.querySelector("button");
+btn.addEventListener(
+  "click",
+  function () {
+    console.log("hello");
+  },
+  { once: true }
+);
+/*
+
+other parameters like 'once: true':
+//when we have nested element with same event when event happens for inner element after that it happens for upper elements (bubbling) default
+capture:true //this makes it first event happen for upper element then inner elements
+//we can prevent bubbling by adding 'even.stopPropagation()'
+
+
+*/
+
 
 //remove events
 theElem.removeEventListener("click", funcName);

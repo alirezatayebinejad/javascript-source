@@ -52,3 +52,11 @@ students.some(function (user) { // we can not call them //some is a method that 
   console.log("IIFE function");
 })()
 
+//callback function
+function logger(func){
+  console.log('in logger: ',func)
+}
+function logger2(){
+  console.log('hello in logger2')
+}
+logger(logger) //whene we send function to another function shouldnt use () to prevent executing in intrepeting time
