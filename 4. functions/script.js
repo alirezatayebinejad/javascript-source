@@ -60,3 +60,12 @@ function logger2(){
   console.log('hello in logger2')
 }
 logger(logger) //whene we send function to another function shouldnt use () to prevent executing in intrepeting time
+
+//pure functions
+/*
+  a pure function should not have different outputs for same inputs in multiple calls
+  should not use outside variables in itselfs
+
+*/
+//composition function - like neseted use of functions
+insertToLi(toLowerCase(trim(todoInputElem.value)))
