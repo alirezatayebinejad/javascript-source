@@ -69,3 +69,14 @@ logger(logger) //whene we send function to another function shouldnt use () to p
 */
 //composition function - like neseted use of functions
 insertToLi(toLowerCase(trim(todoInputElem.value)))
+
+//HOF => higher order function = a function that gets another function as input like 'logger' or return function like:
+function hofExp(){
+  return function (){
+    console.log('inner function');
+  }
+}
+hofExp();//returns the function
+hofExp()();//execute the return function
+let hofInner = hofExp();
+hofInner();
