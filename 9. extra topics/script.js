@@ -18,15 +18,24 @@ try {
 
 //async vs sync
 //sync
-console.log('1');
-console.log('2');
-console.log('3');
-console.log('4');//output: 1 2 3 4
+console.log("1");
+console.log("2");
+console.log("3");
+console.log("4"); //output: 1 2 3 4
 //async
-console.log('1');
-setTimeout(function(){
-console.log('2'); //executes after 3 seconds
+console.log("1");
+setTimeout(function () {
+  console.log("2"); //executes after 3 seconds
+}, 3000);
+console.log("3");
+console.log("4"); //output: 1 3 4 2
 
-},3000);
-console.log('3');
-console.log('4'); //output: 1 3 4 2
+//strict mode
+/*
+  write "use strict" in first line of js file 
+  to prevent you from writing some old buggy codes
+  can be written in first line of a scope 
+  to just use strict mode in that scope instead of global
+*/
+
+

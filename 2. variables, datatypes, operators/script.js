@@ -81,3 +81,13 @@ reference: objects array function
 
 a=b    '=' means a is equal to b and whenever we change a or b the othe one will change too!
 */
+
+//spread syntax
+//we know array1 = array2 means both are the same and if we change array1 array2 is going to change too
+//but we can use ES6 spread syntax to fix this
+array1 = [...array2];
+//now two arrays are not one and we can change one of them without changing another
+//or
+array1 = [...array2, 100, ...array3]; //it concat all of it and send it to array1
+//Can be used for objects too
+newObj = {...oldObj}
