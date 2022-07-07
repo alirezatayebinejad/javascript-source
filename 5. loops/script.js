@@ -28,3 +28,23 @@ do {
   //these codes will be executed 10 times but it will be executed once whether condition is true or not
   i++;
 } while (i < 10);
+
+//for of loops ES6
+let user = [1, 5, 6, 2, 1];
+for (let property of user) {
+  //every time one user value is in property till the end
+  console.log(property);
+}
+// used for
+//iterable => countable
+//likeArray => argument in functions or list of html elements like li's
+//for opjects we can use for in loops ES6
+let userObj = {
+  id: 1,
+  name: "ali",
+  age: 19,
+};
+for (let item in userObj) {
+  //every time one userObj property is in item
+  console.log(item);
+}

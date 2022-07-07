@@ -82,7 +82,7 @@ reference: objects array function
 a=b    '=' means a is equal to b and whenever we change a or b the othe one will change too!
 */
 
-//spread syntax
+//spread syntax ES6
 //we know array1 = array2 means both are the same and if we change array1 array2 is going to change too
 //but we can use ES6 spread syntax to fix this
 array1 = [...array2];
@@ -90,4 +90,40 @@ array1 = [...array2];
 //or
 array1 = [...array2, 100, ...array3]; //it concat all of it and send it to array1
 //Can be used for objects too
-newObj = {...oldObj}
+newObj = { ...oldObj };
+
+//array desk ES6
+let student = [1, "Ali", 12, 15];
+//instead of create a variable for each by typing multiple lines:
+let [studentId, studentName, , userAge] = user;
+/* now values are
+  studentId=1
+  studentName='Ali'
+  userAge=15
+*/
+//can be used for objects too
+let user = {
+  id1: 1,
+  name1: "ali",
+  age1: 22,
+};
+// instead of let id = user.id etc...
+let { name1, age1, id1: userId } = user;
+/* now values are
+  name1="ali"
+  age1=22
+  userId=1
+*/
+
+//Template String or String Literal
+//instead of:
+let type = "fake";
+let txt = "Lorem Ipsum is " + type;
+let names = "ali reza ahmad";
+//use this:
+let type2 = "fake";
+let txt2 = `Lorem Ipsum is ${type} and 2 plus 2 is ${2 + 2}`;
+let names2 = `ali
+reza 
+ahmad
+`; //we can use newLine and it print out just like this

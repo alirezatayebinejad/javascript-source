@@ -81,7 +81,7 @@ hofExp()(); //execute the return function
 let hofInner = hofExp();
 hofInner();
 
-//arrow functions
+//arrow functions ES6
 const pow = (num1, num2) => {
   //codes
   return num1 ** num2;
@@ -96,7 +96,7 @@ btn.addEventListener("click", (event) => {
   console.log(event);
 });
 
-// 'arguments' keyword
+// 'arguments' keyword ES6
 /*
   arguments in functions contains all inputs of the function
   its a likearray cant be loopover(i just made this word up)
