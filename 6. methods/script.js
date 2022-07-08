@@ -26,6 +26,10 @@ text.startsWith("is");
 text.slice(8, 13); //'is the' number of index, to this index
 text.substr(8, 6); //'is the' number of index, this number after the first number
 text.substring(8, 13); //'is the' number of index, to this index like slice
+//ES8
+let username = "amin";
+username.padStart(6, "*"); //**amin
+username.padEnd(6, "*"); //amin**
 
 //math methods
 Math.PI(); //p=3.14...

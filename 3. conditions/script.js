@@ -60,3 +60,9 @@ switch (c) {
   default:
     alert("I don't know such values");
 }
+
+//bitwise operator conditions in one line
+userAge = 12;
+userAge > 18 && alert("you logged in");
+userAge < 18 && alert("you are no eligible");
+let isSet = userAge || 18; // if userAge is true it assigned to isSet if not 18 will assigned to it cause 18 is true

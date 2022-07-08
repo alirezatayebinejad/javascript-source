@@ -38,4 +38,8 @@ console.log("4"); //output: 1 3 4 2
   to just use strict mode in that scope instead of global
 */
 
-
+//numeric seperator ES12
+//we can use '_' sign in numbers to increase readablity
+let number=700000000;
+let goodNumber=700_000_000;
+//browser ignores '_' and not working in strings
