@@ -32,6 +32,14 @@ console.log("4"); //output: 1 3 4 2
 
 //numeric seperator ES12
 //we can use '_' sign in numbers to increase readablity
-let number=700000000;
-let goodNumber=700_000_000;
+let number = 700000000;
+let goodNumber = 700_000_000;
 //browser ignores '_' and not working in strings
+
+//RegEx ES6
+let txt = "i am alireza ,web developer";
+let regexCode = /alireza/; //finds 'alireza' pattern in a string
+regexCode = /a.m/; //first letter 'a' second enything third 'm' can be /a..m/ for four letters etc...
+regexCode = /a.+n/; //first 'a' between and letter for any long and last one should be 'n'
+let emailVerification = /.+@.+.com/; // email true pattern
+console.log(regexCode.test(text)); //true or false
