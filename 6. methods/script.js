@@ -153,3 +153,22 @@ console.log("Second log in gp");
 console.log("Third log in gp");
 console.groupEnd("first logs"); //groups all logs in between
 console.log("%cApi reponse status in 200", "color: red;"); //change color of a log
+
+//ES6 sets methods
+numberSets.add(20);
+numberSets.has(20); //if it finds 20 returns true else false
+numberSets.delete(20);
+numberSets.clear(); //clear all set values
+numberSets.forEach(() => {});
+numberSets.size(() => {}); //length of it
+
+//ES6 map methods
+userMap.set("id", 1);
+userMap.size;
+userMap.has("id");
+userMap.delete("id");
+userMap.get("id");
+userMap.clear();
+userMap.forEach((value, key) => {}); //valueName is the value and key is the property
+let newMap = new Map(Object.entries(anObject)); //converting an object to a map
+let newObj = Object.fromEntries(aMap); //converting a map to an object

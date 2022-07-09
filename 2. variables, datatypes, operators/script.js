@@ -25,6 +25,20 @@ let students = [
   { name: "reza", last: "alavi", age: 25 },
 ]; //arrays of objects
 students[1].age; //25
+//ES6 new datatypes
+//set
+let numberSets = new Set(); //this is like arrays but no same values added
+numberSets.add(20);
+numberSets.add(7);
+let numberSets2 = new Set(1, 2, 3);
+let numberSets3 = new Set(anArray); //change an array to a set
+let newArray = [...numberSets]; //change a set to an array
+//map
+let mapUser = new Map(); //creat an object like set but map has property and value structure - these has object lengths but objects dont
+userMap.set("id", 1);
+//WeakSet and WeakMap
+//instead if set and map write WeakSet and WeakMap
+//weakset has no size method - just store objects - it will delete the object from memory if we delete it later in our program (good for perfomance)
 
 console.log(typeof myAge); // typeof shows the type of the variable
 /*truthy and falsy values:

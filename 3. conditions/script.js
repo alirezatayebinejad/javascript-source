@@ -69,3 +69,16 @@ let isSet = userAge || 18; // if userAge is true it assigned to isSet if not 18 
 //in ES11 we can use ?? instead of ||
 isSet = userAge ?? 18; // this just ignore if its 'null or undefined' but in '||' it ignores all falsy values
 isSet = (userAge || 12) ?? 18; //if in parantesis becomes null or undefined it will ignore it and if its other falsy it will be assigned to variable
+
+//object entries
+let person = {
+  id: 1,
+  firstName: "alireza",
+  lastName: "tayebi",
+  age: 22,
+  job: "web Developer",
+};
+let entriesPerson = Object.entries(person);//it will return an array of 5 value each has two value first property second its value
+//its useful to convert objects that are made by databases like firebase for better use
+
+
