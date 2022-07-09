@@ -43,3 +43,16 @@ regexCode = /a.m/; //first letter 'a' second enything third 'm' can be /a..m/ fo
 regexCode = /a.+n/; //first 'a' between and letter for any long and last one should be 'n'
 let emailVerification = /.+@.+.com/; // email true pattern
 console.log(regexCode.test(text)); //true or false
+
+//this keyword
+//on html element <li onclick="removeList(this)">li</li> 'this' send the tag element
+//in functions this returns the onject of Window
+//in Objects it points to the object itself
+funcName.call(objName); //this code will call funcName with setting 'this' in funcName to points to objName  keyword
+funcName.call(objName,funcInput1, funcInput2);
+funcName.apply(objName,[funcInput1, funcInput2]);//like call
+funcName.bind(objName,funcInput1, funcInput2);//like call and apply but it will not automatically call the function
+//these are useful when two or more objects has same functions we write it in one of the with this then with call apply... we make 'this' points to the object we want
+//this of a function within an object is not pointing to the object we should bind the function to the object but in arrow functions it bind it automatically
+
+

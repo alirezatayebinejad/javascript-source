@@ -66,3 +66,6 @@ userAge = 12;
 userAge > 18 && alert("you logged in");
 userAge < 18 && alert("you are no eligible");
 let isSet = userAge || 18; // if userAge is true it assigned to isSet if not 18 will assigned to it cause 18 is true
+//in ES11 we can use ?? instead of ||
+isSet = userAge ?? 18; // this just ignore if its 'null or undefined' but in '||' it ignores all falsy values
+isSet = (userAge || 12) ?? 18; //if in parantesis becomes null or undefined it will ignore it and if its other falsy it will be assigned to variable
