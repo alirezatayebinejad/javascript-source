@@ -105,6 +105,7 @@ array1 = [...array2];
 array1 = [...array2, 100, ...array3]; //it concat all of it and send it to array1
 //Can be used for objects too
 newObj = { ...oldObj };
+//useful  when we want to change an array or object somewhere in our program but dont want to change the real array we had
 
 //array desk ES6
 let student = [1, "Ali", 12, 15];

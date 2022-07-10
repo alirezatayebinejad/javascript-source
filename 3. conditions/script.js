@@ -21,7 +21,7 @@ console.log(a === b); //is the value and the typeof of a and b same? true
 //ternary conditions
 let result;
 result = a == b ? true : false; //result becomes false - we can put other codes instead of true or false
-
+result = a == b ? true : a == 12 ? true : false; //we can use as many ? as we want like elseif
 //if else
 
 if (a < b) {
@@ -78,7 +78,5 @@ let person = {
   age: 22,
   job: "web Developer",
 };
-let entriesPerson = Object.entries(person);//it will return an array of 5 value each has two value first property second its value
+let entriesPerson = Object.entries(person); //it will return an array of 5 value each has two value first property second its value
 //its useful to convert objects that are made by databases like firebase for better use
-
-
