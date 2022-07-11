@@ -73,4 +73,3 @@ let symbol5 = symbol("sth");
 let symbol6 = symbol("sth");
 //symbol5===symbol6 -> true
 
-//AJAX - Asynchronous Javascript And XML - to get data from backend without refreshing webpage
