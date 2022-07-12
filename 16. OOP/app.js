@@ -37,6 +37,11 @@ class Student extends Person {
     console.log("student has been walked :/");
 
   }
+
+  //static methods only available on class itself lik: Student.stMethod();
+  static stMethod(){
+    //some codes
+  }
 }
 let newStudent =new Student('sara',18,'schoolName');
 newStudent.getAge();//parent methods are available for inherited classes
