@@ -73,3 +73,16 @@ let symbol5 = symbol("sth");
 let symbol6 = symbol("sth");
 //symbol5===symbol6 -> true
 
+//navigator
+//clipboard
+if(window.navigator.clipboard){
+  window.navigator.clipboard.writeText('new text copied');
+
+}else{
+  alert('please use chrome')
+}
+//to read from user clipboard
+if(window.navigator.clipboard){
+  window.navigator.clipboard.readText()
+    .then(res=>console.log('clipboard Text', res))
+}
