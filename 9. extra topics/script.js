@@ -86,3 +86,8 @@ if(window.navigator.clipboard){
   window.navigator.clipboard.readText()
     .then(res=>console.log('clipboard Text', res))
 }
+//for battery status
+window.navigator.getBattery();//returns promise and should be handle with .then etc...
+//onlevelchange and onchargingchange two relevant events
+//userAgent - for OS browser etc...
+navigator.userAgent();

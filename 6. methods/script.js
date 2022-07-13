@@ -85,6 +85,13 @@ let scoresPower = scores.map(function (score) {
 let under15 = scores.filter(function (score) {
   return score < 15; //returns elements that are only less than 15 and store it in under 15 array
 });
+let numbers = scores.reduce(function (prevValue, currentValue) {
+  //at first array index 0 is prevValue and index 1 is curent value
+  console.log(prevValue,currentValue);//outpute in the end: 15 14 | 14 5 | 5 12 | 12 4 | 4 20
+  return currentValue; //now index 1 is going to prevValue and currentValue becomes index 2
+  //this goes till the end of array
+});// can have a second input that determines default value of prevValue
+
 Array.isArray(scores); //checks if the given input is array or not returns true false
 scores.indexOf(5); //return the index of given number in array or returns -1 if it doesnt find
 scores.lastIndexOf(5); //return the index of given number in array (the last one) or returns -1 if it doesnt find
