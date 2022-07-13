@@ -25,13 +25,31 @@ class SiteUser extends HTMLElement {
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
   }
+  //lifecycle methods - use if you want
+  connectedCallback() {
+    //these codes will executes while a custom element is created
+    //like event handling
+    let changeColor = this.shadowRoot.querySelector("h1");
+    changeColor.addEventListener("click", () => {
+      this.remove;
+    });
+  }
+  disconnectedCallback() {
+    //this will happen if element is removed
+    let removeH1 = this.shadowRoot.querySelector("h1");
+    this.removeAttributeNS.removeEventListener("click", this.remove());
+  }
+  /* other methods
+  adoptedCalback => when custom element is moved to a new document
+  attributeChangedCallback: when one of custom elements attributes is added, removed or changed
+
+  */
 }
 window.customElements.define("site-user", SiteUser);
 
 //now we can use a tag like: <site-user></site-user>
 //check it out in index.html file in this folder
 //whenever we create a tag in our html SiteUser constructor() executes
-
 
 //component base projects
 /*
@@ -42,4 +60,11 @@ in header we have like:
 header.js header.css 
 in site-user.js we export({SiteUser}) 
 in main app.js we import { SiteUser } from "addres";
+*/
+
+//slots - to show inner taqs in custom html
+/*
+    just add <slot></slot> wherever in template.innerHTML to render all taqs in there
+    if you want to add specific inner taq just add a slot="slotName" in html taq and
+    use this in template.innerHTML : <slot name="slotName"></slot>
 */
