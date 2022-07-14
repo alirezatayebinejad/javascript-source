@@ -1,7 +1,8 @@
 //we can use data to coockie and use it in website - like user login info (not user pass cause its not safe)
 
-let setCookie = document.querySelector("btn");
+let setCookie = document.querySelector("set-btn");
 let getCookie = document.querySelector(".get-btn");
+let removeCookie = document.querySelector(".remove-btn");
 
 setCookie.addEventListener("load", () => {
   console.log(document.cookie); //show all cookies
@@ -32,3 +33,13 @@ getCookie.addEventListener("load", () => {
   console.log(mainCookie);
 });
 
+removeCookie.addEventListener("load", () => {
+  //for remove cookies: we reset that cookie with past time
+
+  let mainCookieName = prompt("enter the cookie name: ");
+  const now = new Date();
+  console.log(now);
+  now.setTime(now.getTime() - 2 * 24 * 60 * 1000); //time for 2 days ago
+
+  document.cookie = `${mainCookieName}=alireza-tayebi;path=/;expires=${now}`;
+});
