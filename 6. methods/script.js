@@ -2,7 +2,7 @@
 console.log("any variable or value here"); //prints to the console in browser inspect tool
 let theName = "methods";
 alert(
-  "file name: " + theName + "\n" + 'this file contains all "methods" we need'
+    "file name: " + theName + "\n" + 'this file contains all "methods" we need'
 );
 
 isNaN("value"); //if value is number(int or stringnum): output=false else output=true
@@ -49,9 +49,9 @@ Math.random() * 10; // a random number between 0 to 10
 //arrays methods
 let scores = [15, 14, 5, 12, 4, 20];
 let students = [
-  { name: "ali", last: "ahmadi", age: 22 },
-  { name: "reza", last: "alavi", age: 25 },
-  { name: "sara", last: "mohseni", age: 20 },
+    { name: "ali", last: "ahmadi", age: 22 },
+    { name: "reza", last: "alavi", age: 25 },
+    { name: "sara", last: "mohseni", age: 20 },
 ];
 
 scores[6] = 16; //adds the next array value now scores=[15,14,5,12,4,20,16];
@@ -59,38 +59,38 @@ scores.push(13, 17, 1); //push values into array scores=[15,14,5,12,4,20,16,13,1
 scores.pop(); //pop out the last value from array scores=[15,14,5,12,4,20,16,13,17];
 scores.shift(); //delets first element of array scores=[14,5,12,4,20,16,13,17];
 scores.unshift(8, 7); //add to first of array scores=[8,7,14,5,12,4,20,16,13,17];
-scores.splice(2, 3); //delets arrays element starting from 2 to 3 times (2,3,other inputs to replace what we deleted)scores=[8,7,20,16,13,17];
+scores.splice(2, 3); //delets arrays element starting from 2 to 3 times after (2,3,other inputs to replace what we deleted)scores=[8,7,20,16,13,17];
 scores.includes(4); //true if it finds & false if it doesnt find - we can use a second input as sart index
 students.forEach(function (number) {
-  console.log(number.age);
+    console.log(number.age);
 }); //function will execute 0 to 2 times  (array length) and every time one array value goes into function input as number variable + for objects & arrays
 let isInUsers = students.some(function (user) {
-  //enonymous function
-  console.log(user);
-  return user.name == "reza";
+    //enonymous function
+    console.log(user);
+    return user.name == "reza";
 }); //like forEach but it returns true or false and function codes will execute for every array elements untill it reaches a true then stops
 let isAll = ages.every(function (age) {
-  console.log(age);
-  return age > 18;
+    console.log(age);
+    return age > 18;
 }); //like some but it will stop executing when it reaches a false and return true or false
 let studentIndex = students.findIndex(function (st) {
-  return st.age == 25; // 1 returns index of array element which the condition is true. executed loop untill find the element
+    return st.age == 25; // 1 returns index of array element which the condition is true. executed loop untill find the element
 });
 let studentInfo = students.find(function (st) {
-  return st.age == 25; // 1 returns all info of array element which the condition is true. executed loop untill gets true
+    return st.age == 25; // 1 returns all info of array element which the condition is true. executed loop untill gets true
 });
 let scoresPower = scores.map(function (score) {
-  return score ** 2; //do this to every element of array and return it to another array (in scoresPower)
+    return score ** 2; //do this to every element of array and return it to another array (in scoresPower)
 });
 let under15 = scores.filter(function (score) {
-  return score < 15; //returns elements that are only less than 15 and store it in under 15 array
+    return score < 15; //returns elements that are only less than 15 and store it in under 15 array
 });
 let numbers = scores.reduce(function (prevValue, currentValue) {
-  //at first array index 0 is prevValue and index 1 is curent value
-  console.log(prevValue,currentValue);//outpute in the end: 15 14 | 14 5 | 5 12 | 12 4 | 4 20
-  return currentValue; //now index 1 is going to prevValue and currentValue becomes index 2
-  //this goes till the end of array
-});// can have a second input that determines default value of prevValue
+    //at first array index 0 is prevValue and index 1 is curent value
+    console.log(prevValue, currentValue); //outpute in the end: 15 14 | 14 5 | 5 12 | 12 4 | 4 20
+    return currentValue; //now index 1 is going to prevValue and currentValue becomes index 2
+    //this goes till the end of array
+}); // can have a third input that determines default value of prevValue
 
 Array.isArray(scores); //checks if the given input is array or not returns true false
 scores.indexOf(5); //return the index of given number in array or returns -1 if it doesnt find
@@ -104,16 +104,16 @@ theName.split(""); //convert a string to array. input can be a character to sepe
 //function methods
 var i = 10;
 var timer = setInterval(function () {
-  if (i === 0) {
-    alert("Game Over");
-    clearInterval(timer);
-  }
-  console.log(i);
-  i--;
+    if (i === 0) {
+        alert("Game Over");
+        clearInterval(timer);
+    }
+    console.log(i);
+    i--;
 }, 1000); // function reexecute every 1000ms = 1s
 setTimeout(function () {
-  console.log("hello");
-}, 5000); //function executed after 5000ms = 1s - function can have input and it should send from anothe parameter after 5000
+    console.log("hello");
+}, 5000); //function executed after 1000ms = 1s - function can have input and it should send from anothe parameter after 5000
 
 //dates method
 let myTime = new Date();
@@ -143,15 +143,15 @@ console.info("Api response status is 404");
 console.warn("Api response status is 404");
 console.assert(num1 + num2 < 10, "BIG"); //checks the condition if true print the string
 let products = [
-  { id: 1, name: "LapTop", price: 12000000 },
-  { id: 2, name: "Phone", price: 7000000 },
-  { id: 3, name: "SSD Hard", price: 2000000 },
-  { id: 4, name: "Cool Pad", price: 500000 },
+    { id: 1, name: "LapTop", price: 12000000 },
+    { id: 2, name: "Phone", price: 7000000 },
+    { id: 3, name: "SSD Hard", price: 2000000 },
+    { id: 4, name: "Cool Pad", price: 500000 },
 ];
 console.table(products); //prints the product in a table
 console.time("For loop");
 for (let i = 0; i < 1000000; i++) {
-  //Codes
+    //Codes
 }
 console.timeEnd("For loop"); //print time of execution of the codes in between
 console.group("first logs");
