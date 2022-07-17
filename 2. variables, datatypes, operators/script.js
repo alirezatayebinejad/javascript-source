@@ -3,11 +3,11 @@
 // how to declare variables
 var time = 12; // no scoping, can be defined multiple times with the same name, can be defined after assignment etc #not_good
 let name = "alireza"; // has scoping, can not defined multiple times with the same name or after assignment #good
-const age = 24; // can not changed during program also should have value in the first place
+const age = 24; // can not be changed during program also should have value in the first place
 //always use let and const
 
-console.log(name); //to show variable we can use alert but better option is consol.log
-console.log(age); //consol.log shows in consol section in browser inspect tool
+console.log(name); //to show variable we can use alert but better option is console.log
+console.log(age); //consol.log shows in console section in browser inspect tool
 
 //data types//////////////////////////////////////////////////////////////////////////
 
@@ -21,8 +21,8 @@ let aCar = ["bmw", 2500, true]; //arrays can contain any of variable type
 let Ali = { name: "ali", last: "ahmadi", age: 22 }; //objects
 Ali.age; //22
 let students = [
-  { name: "ali", last: "ahmadi", age: 22 },
-  { name: "reza", last: "alavi", age: 25 },
+    { name: "ali", last: "ahmadi", age: 22 },
+    { name: "reza", last: "alavi", age: 25 },
 ]; //arrays of objects
 students[1].age; //25
 //ES6 new datatypes
@@ -30,11 +30,11 @@ students[1].age; //25
 let numberSets = new Set(); //this is like arrays but no same values added
 numberSets.add(20);
 numberSets.add(7);
-let numberSets2 = new Set(1, 2, 3);
+let numberSets2 = new Set([1, 2, 3]);
 let numberSets3 = new Set(anArray); //change an array to a set
-let newArray = [...numberSets]; //change a set to an array
+let newArray = [...numberSets]; //change a set to an array //you will find out the reason of [... name ] syntax later
 //map
-let mapUser = new Map(); //creat an object like set but map has property and value structure - these has object lengths but objects dont
+let mapUser = new Map(); //creat an object like set but map has property and value structure - these has object length but objects dont
 userMap.set("id", 1);
 //WeakSet and WeakMap
 //instead if set and map write WeakSet and WeakMap
@@ -68,7 +68,7 @@ console.log(Boolean("")); // false
 
 //operators////////////////////////////////////////////////////////////////////////
 let a = 2,
-  b = 5;
+    b = 5;
 
 let plus = a + b; //7
 let minus = a - b; //-3
@@ -89,20 +89,20 @@ d = ++c; //d=3
 
 primitive: number bigInt boolean symbol null undefined string
 
-a=b    '=' means we make copy of b to a when we change b or a later the other one will not change
+a=b    '=' means we make copy of 'b' to 'a' when we change 'b' or 'a' later the other one will not change
 
 reference: objects array function
 
-a=b    '=' means a is equal to b and whenever we change a or b the othe one will change too!
+a=b    '=' means 'a' is equal to 'b' and whenever we change 'a' or 'b' the other one will change too!
 */
 
 //spread syntax ES6
-//we know array1 = array2 means both are the same and if we change array1 array2 is going to change too
+//we know array1 = array2 means both are the same and if we change array1, array2 is going to change too
 //but we can use ES6 spread syntax to fix this
 array1 = [...array2];
 //now two arrays are not one and we can change one of them without changing another
 //or
-array1 = [...array2, 100, ...array3]; //it concat all of it and send it to array1
+array1 = [...array2, 100, ...array3]; //it concats all of them and send it to the array1
 //Can be used for objects too
 newObj = { ...oldObj };
 //useful  when we want to change an array or object somewhere in our program but dont want to change the real array we had
@@ -110,7 +110,7 @@ newObj = { ...oldObj };
 //array desk ES6
 let student = [1, "Ali", 12, 15];
 //instead of create a variable for each by typing multiple lines:
-let [studentId, studentName, , userAge] = user;
+let [studentId, studentName, , userAge] = student;
 /* now values are
   studentId=1
   studentName='Ali'
@@ -118,9 +118,9 @@ let [studentId, studentName, , userAge] = user;
 */
 //can be used for objects too
 let user = {
-  id1: 1,
-  name1: "ali",
-  age1: 22,
+    id1: 1,
+    name1: "ali",
+    age1: 22,
 };
 // instead of let id = user.id etc...
 let { name1, age1, id1: userId } = user;
@@ -130,7 +130,7 @@ let { name1, age1, id1: userId } = user;
   userId=1
 */
 
-//Template String or String Literal
+//Template String or String Literal - ES6
 //instead of:
 let type = "fake";
 let txt = "Lorem Ipsum is " + type;
@@ -142,3 +142,14 @@ let names2 = `ali
 reza 
 ahmad
 `; //we can use newLine and it print out just like this
+
+//object entries
+let person = {
+    id: 1,
+    firstName: "alireza",
+    lastName: "tayebi",
+    age: 22,
+    job: "web Developer",
+};
+let entriesPerson = Object.entries(person); //it will return an array of 5 value each has two value first property second its value
+//its useful to convert objects that are made by databases like firebase for better use
