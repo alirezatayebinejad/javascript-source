@@ -13,7 +13,7 @@ let inputElement = document.getElementById("input");
 h1Elem.getAttribute("class"); //can get any attribute even those who are not reall html attribute unlike elem.attr // can not get a setted propert for html element directly in js
 h1Elem.setAttribute("id", "about");
 h1Elem.onclick = function () {
-  //do sth //this is another way to set an attribute and call a funciton
+    //do sth //this is another way to set an attribute and call a funciton
 };
 //get attribute with .
 h1Elem.id; //gets only reall html attribue/object property //can get a setted propert for html element directly in js like the code bellow //but for class we should use .className
@@ -48,7 +48,7 @@ ulElem.appendChild(newLiItem); //or this //just add Node (html element) // just 
 ulElem.insertAdjacentHTML(position, "html code"); //positons: beforbegin - afterbegin - beforend - afterend
 
 //remove elements from DOM
-ulElem.remove(); // just remove a single element not array
+ulElem.remove(); //just remove a single element not array
 
 //add or remove css classes
 h1Elem.classList.add("classname"); //adds class
@@ -57,9 +57,9 @@ h1Elem.classList.toggle("classname"); //adds class if it doesnt exist removes cl
 
 //event minipulation
 h1Elem.addEventListener("submit", function (event) {
-  console.log(event); //it logs all element event properties which can be used to minipulate the element and user interaction
-  event.target; // an example of a proprty that returns the element
-  //other properties can be seen in console.log(event)
+    console.log(event); //it logs all element event properties which can be used to minipulate the element and user interaction
+    event.target; // an example of a proprty that returns the element
+    //other properties can be seen in console.log(event)
 });
 
 //Nodes

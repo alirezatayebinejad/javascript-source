@@ -1,7 +1,7 @@
 //add onclick="funcName()"  attribute to html element
 //oneclick is an event and the function will execute if user click on this element
 function funcName() {
-  alert("you clicked the button");
+    alert("you clicked the button");
 }
 
 //better way to use events directly in javascript
@@ -18,11 +18,11 @@ theElem.addEventListener('click',function(){
 //event happens only once
 let btn = document.querySelector("button");
 btn.addEventListener(
-  "click",
-  function () {
-    console.log("hello");
-  },
-  { once: true }
+    "click",
+    function () {
+        console.log("hello");
+    },
+    { once: true }
 );
 /*
 
@@ -34,7 +34,6 @@ capture:true //this makes it first event happen for upper element then inner ele
 
 */
 
-
 //remove events
 theElem.removeEventListener("click", funcName);
 
@@ -43,7 +42,7 @@ theElem.removeEventListener("click", funcName);
     
     other events:
 
-    onkeypress //just keys that are charachters or numbers tha can be typed
+    onkeypress //just keys that are characters or numbers that can be typed
     onkeydown  // almost all keys
     onkeyup    
     
@@ -97,7 +96,7 @@ theElem.removeEventListener("click", funcName);
     event.dataTransfer.getData('thatidname')
 
     //animations
-    //firs set an animation to an element with css
+    //first set an animation to an element with css
     onanimationstart
     onanimationiteration
     onanimationend
@@ -112,11 +111,4 @@ theElem.removeEventListener("click", funcName);
 */
 
 //prevent an event default behaviour
-event.preventDefault(); // just for element that cancelable is true
-
-//defer & async
-/*
-add defer attribute no value to a html script element to start downloading script file while move on and parsing Dom
-add async attribute no value to a html script element to start downloading script file while move on and parsing Dom
-with async script file may execute in the middle of parsing dom but defer wait till the end so the defer is better
-*/
+event.preventDefault(); // just for element that event.cancelable is true
