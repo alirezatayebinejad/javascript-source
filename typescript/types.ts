@@ -4,7 +4,7 @@
 
 let myName: string = "Alice";
 //you can delete ': string =' ts will figure it out
-//but when ts can't understand what will assigned in the future you should delclare type like:
+//but when ts can't understand what will assigned in the future you should declare type like:
 let myVar: number;
 myVar = 25;
 
@@ -25,7 +25,7 @@ function getFavoriteNumber(): number {
 //         return true
 //     }
 //     return "200 OK"
-// }
+// } //not working
 
 const getHello = (s: string): string => {
 	return "";
@@ -50,7 +50,7 @@ function handleError(errmsg: string): never {
 const User = {
 	name: "hitesh",
 	email: "hitesh@lco.dev",
-	isAvtive: true,
+	isActive: true,
 };
 
 function createUser({ name: string, isPaid: boolean }) {}
