@@ -161,3 +161,30 @@ let seatAllotment: "aisle" | "middle" | "window";
 
 seatAllotment = "aisle";
 // seatAllotment = "crew" //not accepted
+
+//tuples
+
+// const user: (string | number)[] = [1, "hc"]
+let tUser: [string, number, boolean];
+
+tUser = ["hc", 131, true];
+
+let rgb: [number, number, number] = [255, 123, 112];
+
+type tUser = [number, string];
+
+const tnewUser: tUser = [112, "example@google.com"];
+
+tnewUser[1] = "hc.com";
+tnewUser.push("bgg"); // it is possible so it's not good
+
+// enums
+
+// if add 'const' befor enum, generated js is much simpler but both works
+enum SeatChoice {
+	AISLE = "aisle",
+	MIDDLE = 3,
+	WINDOW,
+	FOURTH,
+}
+const hcSeat = SeatChoice.AISLE;
