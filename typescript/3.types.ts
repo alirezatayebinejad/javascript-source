@@ -188,3 +188,80 @@ enum SeatChoice {
 	FOURTH,
 }
 const hcSeat = SeatChoice.AISLE;
+
+//generic types
+
+const score1: Array<number> = [];
+const names: Array<string> = [];
+
+function identityOne(val: boolean | number): boolean | number {
+	return val;
+}
+// any output type can be different from input type
+function identityTwo(val: any): any {
+	return val;
+}
+//in generic type: if input is number for example then output should be number too
+function identityThree<Type>(val: Type): Type {
+	return val;
+}
+// identityThree(true)
+
+//whatever name we want instead of Type
+function identityFour<T>(val: T): T {
+	return val;
+}
+
+interface Bootle {
+	brand: string;
+	type: number;
+}
+
+// identityFour<Bootle>({})
+
+//input is the array of any type and output should be a one index array type as output
+function getSearchProducts<T>(products: T[]): T {
+	// do some database operations
+	const myIndex = 3;
+	return products[myIndex];
+}
+//<T,> is just like <T> but the use ',' in react.js proj to say its a generic not a jsx syntax
+const getMoreSearchProducts = <T>(products: T[]): T => {
+	//do some database operations
+	const myIndex = 4;
+	return products[myIndex];
+};
+
+interface Database {
+	connection: string;
+	username: string;
+	password: string;
+}
+
+function anotherFunction<T, U extends Database>(valOne: T, valTwo: U): object {
+	return {
+		valOne,
+		valTwo,
+	};
+}
+
+// anotherFunction(3, {})
+
+interface Quiz {
+	name: string;
+	type: string;
+}
+
+interface Course {
+	name: string;
+	author: string;
+	subject: string;
+}
+
+class Sellable<T> {
+	public cart: T[] = [];
+
+	addToCart(product: T) {
+		this.cart.push(product);
+	}
+}
